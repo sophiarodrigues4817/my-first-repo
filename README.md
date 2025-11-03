@@ -2,14 +2,30 @@
 
 Learning and practicing version control! 2
 
-This is another sentence.
+# setup
 
-Adding this content using teh VS code text editor (locally).
+clone the repo to download it from github. perhaps onto the desktop.
 
-Here is a list 
+navigate to the repo using the command line. 
 
-    item 1 
-    item 2 
-    item 3
+'''sh
+cd ~/Desktop/my-first-repo
+'''
 
-For more information about Markdown syntax, see the [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+# usage 
+
+Example script: 
+
+'''sh
+python app/my_script.py
+'''
+
+Game of rock, paper, scissors:
+
+'''sh
+python app/rps.py
+'''
+
+# alternative modular style 
+python -m app.rps
+```
