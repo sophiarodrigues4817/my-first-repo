@@ -1,29 +1,36 @@
 import random
 
 VALID_OPTIONS = ["rock","paper","scissors"]
-#ASK USER FOR AN INPUT (RPS) 
 
-user_choice = input("Please choose one of 'rock','paper','scissors'")
-print("USER: ", user_choice)
+if__name == "__main__":
+    
+    #ASK USER FOR AN INPUT (RPS) 
 
-#VALIDATIONS
+    user_choice = input("Please choose one of 'rock','paper','scissors'")
+    print("USER: ", user_choice)
 
-if user_choice not in VALID_OPTIONS:
-    print("Oops, invalid input, please try again")
-    exit()
-#GENERATE RANDOM COMPUTER CHOICE
+    #VALIDATIONS
 
-computer_choice = random.choice(VALID_OPTIONS)
-print("COMPUTER: ", computer_choice)
+    if user_choice not in VALID_OPTIONS:
+        print("Oops, invalid input, please try again")
+        exit()
 
-# DETERMINE THE WINNER
+    #GENERATE RANDOM COMPUTER CHOICE
 
-# quick alias to facilitate some copy and pasting
-# we will soon move this into a function anyway
-u = user_choice
-c = computer_choice
+    computer_choice = random.choice(VALID_OPTIONS)
+    print("COMPUTER: ", computer_choice)
 
-def determine_winner(u,c):
+    # DETERMINE THE WINNER
+
+    # quick alias to facilitate some copy and pasting
+    # we will soon move this into a function anyway
+    u = user_choice
+    c = computer_choice
+
+    result = determine_winner(user_choice, computer_choice)
+    print(result)
+
+def determine_winner(u, c):
     if u == "rock" and c == "rock":
         return "TIE GAME"
     elif u == "rock" and c == "paper":
@@ -31,11 +38,11 @@ def determine_winner(u,c):
     elif u == "rock" and c == "scissors":
         return "USER WINS"
     elif u == "paper" and c == "rock":
-        return "COMPUTER WINS" #OOPS
+        return "COMPUTER WINS" # OOPS
     elif u == "paper" and c == "paper":
         return "TIE GAME"
     elif u == "paper" and c == "scissors":
-        return "USER WINS" #OOPS
+        return "USER WINS" # OOPS
     elif u == "scissors" and c == "rock":
         return "COMPUTER WINS"
     elif u == "scissors" and c == "paper":
@@ -43,5 +50,3 @@ def determine_winner(u,c):
     elif u == "scissors" and c == "scissors":
         return "TIE GAME"
 
-result = determine_winner(user_choice, computer_choice)
-print(result)
