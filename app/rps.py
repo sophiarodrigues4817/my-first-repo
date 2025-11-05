@@ -3,7 +3,10 @@ import random
 VALID_OPTIONS = ["rock","paper","scissors"]
 
 if__name == "__main__":
-    
+    #only run the code below
+    #if we are running this script from teh command line
+    #but not if we're trying to just import some stuff from this file 
+
     #ASK USER FOR AN INPUT (RPS) 
 
     user_choice = input("Please choose one of 'rock','paper','scissors'")
