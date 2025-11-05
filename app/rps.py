@@ -2,7 +2,7 @@ import random
 
 VALID_OPTIONS = ["rock","paper","scissors"]
 
-if__name__ == "__main__":
+if __name__ == "__main__":
     #only run the code below
     #if we are running this script from teh command line
     #but not if we're trying to just import some stuff from this file 
