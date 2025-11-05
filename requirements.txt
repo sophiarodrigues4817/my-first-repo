@@ -1,0 +1,8 @@
+# this is the "requirements.txt" file...
+
+# stocks:
+pandas
+python-dotenv
+
+# testing:
+pytest
