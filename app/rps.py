@@ -2,36 +2,7 @@ import random
 
 VALID_OPTIONS = ["rock","paper","scissors"]
 
-if __name__ == "__main__":
-    #only run the code below
-    #if we are running this script from teh command line
-    #but not if we're trying to just import some stuff from this file 
 
-    #ASK USER FOR AN INPUT (RPS) 
-
-    user_choice = input("Please choose one of 'rock','paper','scissors'")
-    print("USER: ", user_choice)
-
-    #VALIDATIONS
-
-    if user_choice not in VALID_OPTIONS:
-        print("Oops, invalid input, please try again")
-        exit()
-
-    #GENERATE RANDOM COMPUTER CHOICE
-
-    computer_choice = random.choice(VALID_OPTIONS)
-    print("COMPUTER: ", computer_choice)
-
-    # DETERMINE THE WINNER
-
-    # quick alias to facilitate some copy and pasting
-    # we will soon move this into a function anyway
-    u = user_choice
-    c = computer_choice
-
-    result = determine_winner(user_choice, computer_choice)
-    print(result)
 
 def determine_winner(u, c):
     if u == "rock" and c == "rock":
@@ -45,7 +16,7 @@ def determine_winner(u, c):
     elif u == "paper" and c == "paper":
         return "TIE GAME"
     elif u == "paper" and c == "scissors":
-        return "COMPUTER WINS" # OOPS
+        return "COMPUTER WINS"
     elif u == "scissors" and c == "rock":
         return "COMPUTER WINS"
     elif u == "scissors" and c == "paper":
@@ -53,3 +24,30 @@ def determine_winner(u, c):
     elif u == "scissors" and c == "scissors":
         return "TIE GAME"
 
+
+if __name__ == "__main__":
+    # ONLY RUN THE CODE BELOW
+    # IF WE ARE RUNNING THIS SCRIPT FROM THE COMMAND LINE
+    # BUT NOT IF WE'RE TRYING TO JUST IMPORT SOME STUFF FROM THIS FILE
+
+    # ASK USER FOR AN INPUT (R/P/S)
+
+    user_choice = input("Please choose one of 'rock', 'paper', or 'scissors': ")
+    print("USER:", user_choice)
+
+    # VALIDATIONS
+
+    if user_choice not in VALID_OPTIONS:
+        print("OOPS INVALID INPUT, PLEASE TRY AGAIN")
+        # exit()
+        quit()
+
+    # GENERATE RANDOM COMPUTER CHOICE
+
+    computer_choice = random.choice(VALID_OPTIONS)
+    print("COMP:", computer_choice)
+
+    # DETERMINE THE WINNER
+
+    result = determine_winner(user_choice, computer_choice)
+    print(result)
