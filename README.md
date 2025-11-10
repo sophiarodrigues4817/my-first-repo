@@ -1,6 +1,6 @@
 # my-first-repo
 
-Learning and practicing version control! 2
+Learning and practicing version control! 
 
 # setup
 
