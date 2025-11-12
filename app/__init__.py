@@ -1,6 +1,6 @@
 #this init file can be blank 
 
-#it helps python adn pytest understand that 
+#it helps python and pytest understand that 
 
 #the app dierctory has some code in it that 
 
