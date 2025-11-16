@@ -20,16 +20,15 @@ conda create -n my-first-env-fall-2025 python=3.11
 
 activate virtual environment: 
 ```sh
-conda activate -n my-first-env-fall-2025 python=3.11
+conda activate my-first-env-fall-2025
 ```
 
-install package dependences: 
+install package dependencies: 
 ```sh
 pip install -r requirements.txt
 ```
 
 # usage 
-
 Example script: 
 
 ```sh
