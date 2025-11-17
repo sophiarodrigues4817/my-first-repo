@@ -52,3 +52,6 @@ Run tests:
 ```sh
 pytest
 ```
+# flask run command (for windows)
+export FLASK_APP=web_app
+flask run 
