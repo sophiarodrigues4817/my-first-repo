@@ -32,4 +32,5 @@ def hello_world():
 
     message = f"Hello, {name}!"
     #return message
-    return render_template("hello.html", message=message)
+    y = 20 
+    return render_template("hello.html", message=message, x=5, y=y)
