@@ -2,8 +2,8 @@ import random
 
 VALID_OPTIONS = ["rock","paper","scissors"]
 
-def generate_random_choice:
-    return random_choice(VALID_OPTIONS)
+def generate_random_choice():
+    return random.choice(VALID_OPTIONS)
 
 def determine_winner(u, c):
     if u == "rock" and c == "rock":
